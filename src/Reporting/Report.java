@@ -136,8 +136,8 @@ public class Report extends Thread
 			//gbMailFrom = props.getProperty("EMail_From_SendResults").toLowerCase();
 			//gbMailCc = props.getProperty("EMail_CC_SendResults").toLowerCase();
 			gvalue1=props.getProperty("pvalue1");
-			//gvalue2=props.getProperty("pvalue2");
-			//gvalue3=props.getProperty("pvalue3");
+			gvalue2=props.getProperty("pvalue2");
+			gvalue3=props.getProperty("pvalue3");
 			booleanScreenshotForPassedStep = true;
 			
 			
