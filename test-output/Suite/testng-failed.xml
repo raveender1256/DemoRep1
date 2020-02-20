@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="4" name="Parallel(failed)" parallel="methods">
+    <parameter name="platformVersion" value="5.1.1"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="appURL" value="https://elam-test.login.us2.oraclecloud.com/"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="emulator-5554"/>
+    <parameter name="device" value="Android Emulator"/>
+    <classes>
+      <class name="driverscript.DClass">
+        <methods>
+          <include name="Safari"/>
+          <include name="initializeDriver"/>
+          <include name="Firefox"/>
+          <include name="Chrome"/>
+          <include name="IE"/>
+          <include name="CloseReport"/>
+        </methods>
+      </class> <!-- driverscript.DClass -->
+    </classes>
+  </test> <!-- Parallel(failed) -->
+</suite> <!-- Failed suite [Suite] -->

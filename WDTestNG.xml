@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="4" parallel="methods">
+   <test name="Parallel">
+    <classes>
+      <class name="driverscript.DClass"/>
+      <parameter name="appURL" value="https://elam-test.login.us2.oraclecloud.com/" />
+    
+
+<parameter name="deviceName" value="emulator-5554" />
+      <parameter name="platformName" value="Android"/>  
+      <parameter name="device" value="Android Emulator"/> 
+      <!-- <parameter name="platformVersion" value="8.0.0"/> -->
+      <parameter name="platformVersion" value="5.1.1"/> 
+      <parameter name="browser" value="Firefox"/>  
+      
+    </classes>
+  </test>  
+
+ 
+  
+</suite> <!-- Suite -->
+
+

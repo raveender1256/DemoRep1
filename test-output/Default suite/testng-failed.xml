@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="driverscript.DClass">
+        <methods>
+          <include name="Safari"/>
+          <include name="initializeDriver"/>
+          <include name="Firefox"/>
+          <include name="Chrome"/>
+          <include name="IE"/>
+          <include name="CloseReport"/>
+        </methods>
+      </class> <!-- driverscript.DClass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
