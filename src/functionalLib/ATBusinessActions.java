@@ -21,6 +21,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -112,7 +113,12 @@ public class ATBusinessActions {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "/Resources/chromedriver.exe");
 			System.out.println("YRR2");
-			BDriver = new ChromeDriver();
+			
+			ChromeOptions Options = new ChromeOptions();
+			Options.addArguments("Headless");		
+			BDriver =    new ChromeDriver(Options);	
+			
+			//BDriver = new ChromeDriver();
 			System.out.println("YRR3");
 			BDriver.manage().window().maximize();
 			System.out.println("YRR4");
