@@ -114,11 +114,11 @@ public class ATBusinessActions {
 					System.getProperty("user.dir") + "/Resources/chromedriver.exe");
 			System.out.println("YRR2");
 			
-			//ChromeOptions Options = new ChromeOptions();
-			//Options.addArguments("Headless");		
-			//BDriver =    new ChromeDriver(Options);	
+			ChromeOptions Options = new ChromeOptions();
+			Options.addArguments("Headless");		
+			BDriver =    new ChromeDriver(Options);	
 			
-			BDriver = new ChromeDriver();
+			//BDriver = new ChromeDriver();
 			System.out.println("YRR3");
 			BDriver.manage().window().maximize();
 			System.out.println("YRR4");
